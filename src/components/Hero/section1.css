@@ -1,0 +1,759 @@
+.new-section {
+    width: 100%;
+    padding: 50px 20px;
+    background: linear-gradient(90deg, rgba(189, 233, 251, 0.43) 0%, rgba(186, 218, 85, 0.34) 100%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers h2 and p */
+    flex-direction: column; /* Stack items vertically */
+}
+
+.new-section h2 {
+    font-size: 28px;
+    color: #e97588; /* Dark text color */
+    margin-bottom: 15px;
+}
+
+.new-section p {
+    font-size: 18px;
+    color: #555; /* Medium text color */
+    max-width: 800px;
+    margin: 0 auto; /* Center align */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .new-section h2 {
+        font-size: 24px;
+    }
+
+    .new-section p {
+        font-size: 16px;
+    }
+}
+
+.pmi-logo {
+    width: 50px; /* Adjust size */
+    height: auto;
+    align-self: flex-start; /* Align the logo to the left */
+    margin-bottom: 10px;
+    .new-section {
+  width: 100%;
+  padding: 50px 20px;
+  background-color: linear-gradient(90deg, rgba(189, 233, 251, 0.43) 0%, rgba(186, 218, 85, 0.34) 100%); /* Light gray background */
+  text-align: center;
+}
+
+.new-section h2 {
+  font-size: 28px;
+  color: #333; /* Dark text color */
+  margin-bottom: 15px;
+}
+
+.new-section p {
+  font-size: 18px;
+  color: #555; /* Medium text color */
+  max-width: 800px;
+  margin: 0 auto; /* Center align */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .new-section h2 {
+      font-size: 24px;
+  }
+
+  .new-section p {
+      font-size: 16px;
+  }
+}
+.benefits-heading {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 30px 0 20px; /* Space above and below */
+  color: #333; /* Dark text color */
+}
+.row {
+  display: flex; /* Enable Flexbox */
+  justify-content: space-between; /* Distribute space evenly between columns */
+  gap: 20px; /* Optional: Add spacing between columns */
+  flex-wrap: wrap; /* Wrap to a new row if necessary (for smaller screens) */
+  margin-top: 20px;
+}
+
+.row > * {
+  flex-basis: 30%; /* Each column takes 30% of the row width */
+  max-width: 30%; /* Prevent columns from exceeding 30% width */
+  box-sizing: border-box; /* Include padding and borders in width calculation */
+}
+
+.course-col {
+  flex-basis: 31%; /* Makes all columns equal width */
+  max-width: 30%; /* Restricts each column to 30% width */
+  text-align: center;
+  background-color: #f9f9f9; /* Adds a light background for visibility */
+  padding: 20px; /* Adds padding inside the container */
+  border-radius: 8px; /* Adds rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+  padding:20px 10px;
+  box-sizing:border-box;
+}
+
+.course-col h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.course-col p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .row {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;
+  }
+
+  .course-col {
+      max-width: 100%; /* Full width on smaller screens */
+      margin-bottom: 20px; /* Add space between stacked items */
+  }
+}
+.our-courses {
+  width: 100%;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.courses-heading {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.courses-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.course-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.course-item h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.course-item p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .courses-list {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+}
+.why-choose-us {
+    width: 80%;
+    margin: auto;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column; /* Stack everything vertically by default */
+    align-items: flex-start; /* Align items to the left */
+    gap: 20px; /* Adds space between the sections */
+    text-align: left; /* Ensure text is left-aligned */
+}
+
+.why-choose-us h1 {
+    font-size: 50px;
+    color: #333;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.why-choose-us-content {
+    display: flex;
+    justify-content: space-between; /* Align text and image on opposite sides */
+    width: 100%;
+    align-items: center; /* Vertically center the content */
+    gap: 30px; /* Space between text and image */
+}
+
+.why-choose-us-text {
+    max-width: 50%;
+}
+
+.why-choose-us-content .serial {
+    font-size: 30px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.why-choose-us-content .why-choose-us-text span {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+.why-choose-us-content .why-choose-us-text p {
+    font-size: 16px;
+    color: #555;
+}
+
+.why-choose-us-content .why-choose-us-image {
+    max-width: 40%;
+}
+
+.why-choose-us img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .why-choose-us {
+        padding: 20px;
+    }
+
+    .why-choose-us-content {
+        flex-direction: column; /* Stack text and image vertically on smaller screens */
+        text-align: center; /* Center text and image */
+    }
+
+    .why-choose-us-content .why-choose-us-text {
+        max-width: 100%;
+        margin-bottom: 20px; /* Adds space between text and image */
+    }
+
+    .why-choose-us-content .why-choose-us-image {
+        max-width: 100%; /* Image takes full width */
+    }
+
+    .why-choose-us h1 {
+        font-size: 28px;
+    }
+
+    .why-choose-us-content .serial {
+        font-size: 24px; /* Adjust serial number size on smaller screens */
+    }
+}
+
+.our-courses {
+    width: 100%;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.courses-heading {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+.courses-list {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+    color: hwb(0 4% 96%);
+    
+
+}
+
+.course-item {
+    background-color: #c8eff1;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.course-item li{ 
+  font-size:18px;
+  color: hsl(0, 0%, 3%);
+}
+
+
+   
+.course-item h4 {
+    font-size: 20px;
+    color: hwb(240 0% 96%);
+    margin-bottom: 10px;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .courses-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.course-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff; /* Bootstrap primary blue */
+    border: 1;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.course-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .course-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Trainer Card Section */
+.trainer-info-section {
+    padding: 40px;
+    background-color: rgb(207, 232, 185);
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    font-weight: bolder;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab-btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1rem;
+    background-color: #e6e7f6;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tab-btn.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .trainer-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .trainer-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+  }
+  
+  .trainer-details {
+    flex-grow: 1;
+  }
+  
+  .trainer-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .trainer-description {
+    margin: 20px 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .tab-content p {
+    font-size: 1.3rem;
+    color: hsl(0, 0%, 4%);
+  }
+  
+  .cta-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .join-batch-link {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .join-batch-link:hover {
+    text-decoration: underline;
+  }
+  
+  .chat-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .chat-btn:hover {
+    background-color: #0056b3;
+  }
+ /* Testimonials Carousel Section */
+/* Testimonials Carousel Section */
+.testimonials-carousel-section {
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.testimonials-carousel-heading {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Carousel Container */
+.carousel-container {
+  overflow: hidden; /* Ensures only visible items are shown */
+  position: relative;
+  max-width: 90%; /* Adjust width as needed */
+  margin: 0 auto;
+}
+
+/* Carousel Track */
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Smooth slide transition */
+  gap: 20px; /* Space between testimonials */
+}
+
+/* Testimonial Slide */
+.testimonial-slide {
+  min-width: 33.33%; /* Each slide takes one-third of the carousel width */
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  background-color: #cbcae9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.carousel-role {
+  font-weight: bold;
+  color: #555;
+  margin: 10px 0 5px;
+}
+
+.carousel-review {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.google-review-link {
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.google-review-link:hover {
+  text-decoration: underline;
+}
+
+/* Navigation Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+/* Indicators */
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.indicator-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+}
+
+.indicator-btn.active {
+  background-color: #0073e6; /* Highlight active indicator */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testimonial-slide {
+    min-width: 100%; /* Show one testimonial per slide on smaller screens */
+  }
+}
+
+.faq-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .faq-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .accordion {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .faq-item {
+    border: 1px solid hsl(0, 57%, 64%);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .faq-question {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+  
+  .faq-question:hover {
+    background-color: #0056b3;
+  }
+  
+  .faq-answer {
+    padding: 15px;
+    background-color: hwb(0 91% 5%);
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    color: greenyellow;
+  }
+  
+  .faq-item .faq-answer {
+    display: none; /* Hide answers by default */
+  }
+  
+  .faq-item.active .faq-answer {
+    display: block; /* Show the answer when the item is active */
+  }
+  
+  .faq-question span {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .faq-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .faq-question {
+      font-size: 1rem;
+    }
+  
+    .faq-answer {
+      font-size: 0.9rem;
+
+    }
+  }
+  /* Contact Us Section */
+.contact-section {
+    padding: 2rem;
+    background: hsl(240, 47%, 87%);
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+  }
+  
+  .contact-section p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-form .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 20px 30px;
+    border: none;
+    background: #007bff;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .contact-form .form-group input {
+      width: calc(50% - 0.5rem);
+    }
+  }
+  
+    .contact-form .form-group textarea {
+      width: 100%;
+    }
+    .faq-section {
+      padding: 20px;
+      background: #5e9bd7;
+      border-radius: 5px;
+    }
+    
+    .accordion .faq-item {
+      border-bottom: 1px solid hsl(0, 0%, 9%);
+    }
+    
+    .faq-question {
+      background: none;
+      border: none;
+      text-align: left;
+      font-size: 16px;
+      padding: 10px 0;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+    
+    .faq-question:hover {
+      color: hsl(211, 20%, 55%);
+    }
+    
+    .faq-answer {
+      padding: 10px 0;
+      color: hsl(0, 58%, 48%);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    
+
+  
+  /* Responsive adjustments for smaller screens */
+  
+  
