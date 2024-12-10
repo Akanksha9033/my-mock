@@ -1,0 +1,45 @@
+/* App.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    color: blue;
+  }
+  
+  .faq-item {
+    margin-bottom: 10px;
+  }
+  
+  .faq-question {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .faq-question:hover {
+    background-color: #e9ecef;
+  }
+  
+  .faq-answer {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    background-color: #fff;
+  }
+  
+  .toggle-icon {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  

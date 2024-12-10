@@ -10,6 +10,8 @@ nav {
   position: relative; /* Positioning for the hamburger icon */
   min-height: 1vh;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box-shadow to navbar */
+  margin-top: 5px;
+
 }
 
 nav img {

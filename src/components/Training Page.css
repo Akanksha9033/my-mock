@@ -192,17 +192,13 @@ margin: 0 auto; /* Center align */
   .contact-form .form-group textarea {
     width: 100%;
   }
-  /* FAQ Section Styling */
-/* FAQ Section Styling */
-
-/* General container styling */
 /* General container styling */
 .why-choose-us {
   background-color: #f8f9fa;
   padding: 40px 20px;
   text-align: center;
-  border-bottom: 2px solid #6c757d;
   font-family: 'Arial', sans-serif;
+  width: 100%;
 }
 
 /* Heading Styling */

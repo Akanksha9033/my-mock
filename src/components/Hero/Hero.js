@@ -306,7 +306,6 @@ const Home = () => {
       →
     </button>
 
-    {/* Indicators */}
     <div className="carousel-indicators">
       {Array(Math.ceil(testimonialsData.length / 3))
         .fill()

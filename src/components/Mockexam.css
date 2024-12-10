@@ -1,0 +1,224 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Hero Section */
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background: #f8f9fa;
+
+}
+
+.text-content {
+  flex: 1;
+  max-width: 50%;
+  padding: 20px;
+}
+
+.text-content h1 {
+  font-size: 2.5rem;
+  color: #1A1A1A;
+}
+
+.text-content h1 span {
+  color: #4E52F4;
+}
+
+.text-content p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  margin-left: 130px;
+}
+
+.text-content button {
+  background-color: #4E52F4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 130px;
+}
+
+.text-content button:hover {
+  background-color: #3A41D1;
+}
+
+.image-content {
+  flex: 1;
+  max-width: 50%;
+  text-align: center;
+  padding: 20px;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media Queries for Hero Section */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content,
+  .image-content {
+    max-width: 100%;
+  }
+
+  .text-content h1 {
+    font-size: 2rem;
+  }
+}
+.main-container {
+
+  padding: 20px;
+  background-color: hsl(226, 40%, 86%);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+h1 {
+
+  color: #333;
+  font-weight: bolder;
+  margin-left: 140px;
+}
+
+
+/* Full-Length Mock Exams Section */
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 50vh;
+}
+
+.content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.content h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Media Queries for Mock Exams Section */
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content,
+  .image {
+    max-width: 100%;
+  }
+
+  .content h2 {
+    font-size: 1.5rem;
+  }
+
+  .content ul {
+    font-size: 0.9rem;
+  }
+}
+.button-container {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.buy-now {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buy-now:hover {
+  background-color: #45a049;
+}
+.faq-container {
+  margin-top: 40px;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question:hover {
+  background-color: #e9ecef;
+}
+
+.faq-answer {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  background-color: #fff;
+}
+
+.faq-answer.show {
+  display: block;
+}
+
+.toggle-icon {
+  font-size: 18px;
+  font-weight: bold;
+}
