@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Mockexam.css";
 import mockphotoImg from "../assets/mockphoto.png";
+import FulllengthmockexamImg from "../assets/Fulllengthmockexam.png";
+import PersonalizedimageImg from "../assets/Personalizedimage.png";
 
 const FAQItem = ({ question, answer, isOpen, toggle }) => {
   return (
@@ -88,7 +90,7 @@ const PMPPracticeMockExams = () => {
             </ul>
           </div>
           <div className="image">
-            <img src="https://via.placeholder.com/150" alt="Exam Icon" />
+            <img src={FulllengthmockexamImg} alt="Exam Icon" />
           </div>
         </div>
 
@@ -112,7 +114,7 @@ const PMPPracticeMockExams = () => {
             </ul>
           </div>
           <div className="image">
-            <img src="https://via.placeholder.com/150" alt="Support Icon" />
+            <img src={PersonalizedimageImg} alt="Support Icon" />
           </div>
         </div>
 
@@ -120,20 +122,20 @@ const PMPPracticeMockExams = () => {
         <div className="button-container">
           <button className="buy-now">Buy Now</button>
         </div>
+      </div>
 
-        {/* FAQ Section */}
-        <div className="faq-container">
-          <h1>FAQs</h1>
-          {faqData.map((faq, index) => (
-            <FAQItem
-              key={index}
-              question={faq.question}
-              answer={faq.answer}
-              isOpen={openIndex === index}
-              toggle={() => handleToggle(index)}
-            />
-          ))}
-        </div>
+      {/* FAQ Section - Separate Container */}
+      <div className="faq-container">
+        <h1>FAQs</h1>
+        {faqData.map((faq, index) => (
+          <FAQItem
+            key={index}
+            question={faq.question}
+            answer={faq.answer}
+            isOpen={openIndex === index}
+            toggle={() => handleToggle(index)}
+          />
+        ))}
       </div>
     </div>
   );
