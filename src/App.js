@@ -10,6 +10,7 @@ import Footer from './components/Footer/Footer';
 import Login from './components/Login/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import FAQ from './components/Faq';
+import Event from './components/Event';
 
 
 
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/training" element={<Training />} />
           <Route path="/mockexam" element={<Mockexam />} />
+          <Route path="/event" element={<Event />} />
         </Routes>
         <Footer />
       </div>

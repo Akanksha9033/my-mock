@@ -18,13 +18,13 @@ const Navbar = () => {
       </button>
       <div className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
         <ul>
-        <li><Link to="/hero">Hero</Link></li>
+        <li><Link to="/hero">Home</Link></li>
           <li><Link to="/training">Training</Link></li>
           <li><Link to="/mockexam">Mockexam</Link></li>
           <li><Link to="/about">About Us</Link></li>
           <li><Link to="/contact">Contact Us</Link></li>  {/* Correct path for Contact Us page */}
           <li><Link to="/login">Login</Link></li>  {/* Correct path for Contact Us page */}
-
+          <li><Link to="/Event">Event</Link></li>  {/* Correct path for Contact Us page */}
         </ul>
       </div>
     </nav>

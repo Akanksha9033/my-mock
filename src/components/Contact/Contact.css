@@ -1,156 +1,82 @@
-/* Contact Page Background */
-.contact-page {
-    background-color: #4748ac;
-    padding-bottom: 50px;
-  }
-  
-  /* Hero Section */
-  .hero-section {
-    background-color: hwb(0 3% 97%);
-    color: #0e0e0e;
-    padding: 200px 0;
-  }
-  
-  .hero-section h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #0e0e0e;
-  }
-  
-  .hero-section p {
-    font-size: 2.25rem;
-    color: #4748ac;
-    font-weight: bold;
-  }
-  
-  /* Contact Form Section */
-  .contact-form h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: white;
-  }
-  
-  .contact-form .form-control {
-    border-radius: 10px;
-    margin-bottom: 15px;
-  }
-  
-  .contact-form button {
-    border-radius: 25px;
-  }
-  
-  .contact-form .alert {
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-  }
-  
-  .contact-form label {
-    color: #f5ebeb;
-    font: 1em sans-serif;
-  }
-  
-  .contact-form p {
-    color: white;
-  }
-  
-  /* Contact Hero Section Background */
-  .contact-page .hero-section {
-    background-image: url('../../assets/Contact2.png');/* Add your custom background image URL for Contact page */
-    background-size: cover;
-    background-position: center;
-    padding: 100px;
+/* General Reset */
+.contactus-page {
+  font-family: 'Arial', sans-serif;
+}
 
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #6dd5ed, #2193f3);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  border-bottom: 3px solid #ddd;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+/* Main Centering Section */
+.contact-container {
+  padding: 50px 20px;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column;
+}
+
+.form-container {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Keep the form's width controlled */
+}
+
+/* Success Alert */
+.alert-success {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Buttons Styling */
+.submit-btn {
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
   }
-  
-  /* Responsiveness Adjustments */
-  
-  /* On Small Devices (Mobile) */
-  @media (max-width: 576px) {
-    .hero-section h1 {
-      font-size: 2rem; /* Adjust font size */
-    }
-  
-    .hero-section p {
-      font-size: 1rem; /* Adjust font size */
-    }
-  
-    .contact-form h2 {
-      font-size: 1.5rem; /* Adjust heading size */
-    }
-  
-    .contact-form .form-control {
-      font-size: 0.9rem; /* Make input fields smaller on mobile */
-    }
-  
-    .contact-form button {
-      width: 100%; /* Full width for buttons */
-    }
-  
-    .contact-page {
-      padding-bottom: 30px;
-    }
-  
-    /* Adjust Contact Info Column */
-    .contact-form .col-md-6 {
-      margin-top: 20px; /* Add margin on top */
-    }
+
+  .hero-section p {
+    font-size: 1rem;
   }
-  
-  /* On Medium Devices (Tablets) */
-  @media (min-width: 576px) and (max-width: 768px) {
-    .hero-section h1 {
-      font-size: 2.5rem; /* Adjust font size */
-    }
-  
-    .hero-section p {
-      font-size: 1.2rem; /* Adjust font size */
-    }
-  
-    .contact-form h2 {
-      font-size: 1.75rem; /* Adjust heading size */
-    }
-  
-    .contact-form .form-control {
-      font-size: 1rem; /* Adjust input size */
-    }
-  
-    .contact-form button {
-      width: 100%; /* Full width for buttons */
-    }
+
+  .form-container {
+    max-width: 500px;
   }
-  
-  /* On Larger Devices (Desktop) */
-  @media (min-width: 768px) {
-    .hero-section h1 {
-      font-size: 3rem; /* Larger font size for desktop */
-    }
-  
-    .hero-section p {
-      font-size: 1.25rem; /* Adjust font size */
-    }
-  
-    .contact-form h2 {
-      font-size: 2rem; /* Adjust heading size */
-    }
-  
-    .contact-form .form-control {
-      font-size: 1rem; /* Normal font size */
-    }
-  
-    .contact-form button {
-      width: auto; /* Reset to original size on larger screens */
-    }
-  
-    /* Flex Layout for Contact Info and Form */
-    .contact-form .row {
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    .contact-form .col-md-6 {
-      flex: 0 0 48%; /* Adjust width for desktop */
-    }
+}
+
+@media (max-width: 576px) {
+  .hero-section h1 {
+    font-size: 2rem;
   }
-  
+
+  .form-container {
+    padding: 10px;
+    max-width: 100%;
+  }
+}

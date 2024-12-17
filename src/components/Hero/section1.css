@@ -1,53 +1,20 @@
 .new-section {
-    width: 100%;
-    padding: 50px 20px;
-    background: linear-gradient(90deg, rgba(189, 233, 251, 0.43) 0%, rgba(186, 218, 85, 0.34) 100%);
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Centers h2 and p */
-    flex-direction: column; /* Stack items vertically */
-}
-
-.new-section h2 {
-    font-size: 28px;
-    color: #e97588; /* Dark text color */
-    margin-bottom: 15px;
-}
-
-.new-section p {
-    font-size: 18px;
-    color: #555; /* Medium text color */
-    max-width: 800px;
-    margin: 0 auto; /* Center align */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .new-section h2 {
-        font-size: 24px;
-    }
-
-    .new-section p {
-        font-size: 16px;
-    }
-}
-
-.pmi-logo {
-    width: 50px; /* Adjust size */
-    height: auto;
-    align-self: flex-start; /* Align the logo to the left */
-    margin-bottom: 10px;
-    .new-section {
   width: 100%;
   padding: 50px 20px;
-  background-color: linear-gradient(90deg, rgba(189, 233, 251, 0.43) 0%, rgba(186, 218, 85, 0.34) 100%); /* Light gray background */
+  background: linear-gradient(90deg, rgba(189, 233, 251, 0.43) 0%, rgba(186, 218, 85, 0.34) 100%);
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
 }
-
+.pmi-logo {
+  width: 70px !important;
+  height:70px !important;
+}
 .new-section h2 {
   font-size: 28px;
-  color: #333; /* Dark text color */
+  color: #e97588; /* Dark text color */
   margin-bottom: 15px;
 }
 
@@ -55,7 +22,19 @@
   font-size: 18px;
   color: #555; /* Medium text color */
   max-width: 800px;
-  margin: 0 auto; /* Center align */
+  margin: 0 auto;
+}
+
+.join-now {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #e97588;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
 /* Responsive adjustments */
@@ -67,7 +46,13 @@
   .new-section p {
       font-size: 16px;
   }
+
+  .pmi-logo {
+      width: 40px; /* Smaller logo for smaller screens */
+   
+  }
 }
+
 .benefits-heading {
   text-align: center;
   font-size: 50px;
@@ -118,54 +103,130 @@
       flex-direction: column; /* Stack items vertically */
       align-items: center;
   }
+}
 
   .course-col {
       max-width: 100%; /* Full width on smaller screens */
       margin-bottom: 20px; /* Add space between stacked items */
   }
+/* why-choose-us */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
 }
+
+.hero-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.text-section {
+  flex: 1;
+}
+
+.text-section h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.text-section h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.text-section p {
+  font-size: 1.3rem;
+  color: #555;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.circle-image {
+  border-radius: 50%;
+
+  width:200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-section {
+    margin-top: 20px;
+  }
+}
+  
 .our-courses {
   width: 100%;
   padding: 50px 20px;
-  background-color: #f4f4f4;
   text-align: center;
 }
 
 .courses-heading {
-  font-size: 30px;
-  color: #333;
+  font-size: 50px;
+  color: hsl(0, 0%, 6%);
   margin-bottom: 20px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.our-courses p {
+  font-size: 20px; /* Increased font size */
+  line-height: 1.8em; /* Better readability */
+  color: hsl(0, 0%, 10%); /* Optional: Adjust color for visibility */
 }
 
 .courses-list {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 80px;
   flex-wrap: wrap;
+  color: #4748ac;
+  font-style: Normal;
 }
 
 .course-item {
-  background-color: #fff;
+  background-color: #c8eff1;
   padding: 20px;
   border-radius: 8px;
   width: 250px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   margin-bottom: 20px;
+  width: 50vh;
 }
 
-.course-item h3 {
-  font-size: 22px;
-  color: #333;
+.course-item li {
+  font-size: 18px;
+  color: hsl(0, 0%, 3%);
+  font-size: 20px;
+  line-height: 1.8em;
+  text-align: left;
+}
+
+.course-item h4 {
+  font-size: 20px;
+  color: #010111;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
-.course-item p {
-  font-size: 16px;
-  color: #555;
-}
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .courses-list {
       flex-direction: column;
@@ -173,276 +234,179 @@
   }
 }
 
-}
-.why-choose-us {
-    width: 80%;
-    margin: auto;
-    padding: 50px 20px;
-    display: flex;
-    flex-direction: column; /* Stack everything vertically by default */
-    align-items: flex-start; /* Align items to the left */
-    gap: 20px; /* Adds space between the sections */
-    text-align: left; /* Ensure text is left-aligned */
-}
-
-.why-choose-us h1 {
-    font-size: 50px;
-    color: #333;
-    font-weight: bolder;
-    margin-bottom: 20px;
-}
-
-.why-choose-us-content {
-    display: flex;
-    justify-content: space-between; /* Align text and image on opposite sides */
-    width: 100%;
-    align-items: center; /* Vertically center the content */
-    gap: 30px; /* Space between text and image */
-}
-
-.why-choose-us-text {
-    max-width: 50%;
-}
-
-.why-choose-us-content .serial {
-    font-size: 30px;
-    font-weight: bold;
-    color: #444;
-    margin-bottom: 10px;
-}
-
-.why-choose-us-content .why-choose-us-text span {
-    font-size: 24px;
-    font-weight: 600;
-    color: #333;
-}
-
-.why-choose-us-content .why-choose-us-text p {
-    font-size: 16px;
-    color: #555;
-}
-
-.why-choose-us-content .why-choose-us-image {
-    max-width: 40%;
-}
-
-.why-choose-us img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .why-choose-us {
-        padding: 20px;
-    }
-
-    .why-choose-us-content {
-        flex-direction: column; /* Stack text and image vertically on smaller screens */
-        text-align: center; /* Center text and image */
-    }
-
-    .why-choose-us-content .why-choose-us-text {
-        max-width: 100%;
-        margin-bottom: 20px; /* Adds space between text and image */
-    }
-
-    .why-choose-us-content .why-choose-us-image {
-        max-width: 100%; /* Image takes full width */
-    }
-
-    .why-choose-us h1 {
-        font-size: 28px;
-    }
-
-    .why-choose-us-content .serial {
-        font-size: 24px; /* Adjust serial number size on smaller screens */
-    }
-}
-
-.our-courses {
-    width: 100%;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.courses-heading {
-    font-size: 50px;
-    color: black;
-    margin-bottom: 20px;
-    font-weight: bolder;
-}
-
-.courses-list {
-    display: flex;
-    justify-content: center;
-    gap: 70px;
-    flex-wrap: wrap;
-    color: hwb(0 4% 96%);
-    
-
-}
-
-.course-item {
-    background-color: #c8eff1;
-    padding: 20px;
-    border-radius: 8px;
-    width: 250px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin-bottom: 20px;
-}
-.course-item li{ 
-  font-size:18px;
-  color: hsl(0, 0%, 3%);
-}
-
-
-   
-.course-item h4 {
-    font-size: 20px;
-    color: hwb(240 0% 96%);
-    margin-bottom: 10px;
-}
-
-
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .courses-list {
-        flex-direction: column;
-        align-items: center;
-    }
-}
 .course-btn {
-    margin-top: 15px;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: #007bff; /* Bootstrap primary blue */
-    border: 1;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff; /* Bootstrap primary blue */
+  border: 1;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .course-btn:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+  background-color: #0056b3; /* Darker shade on hover */
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
-    .course-btn {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
+  .course-btn {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+}
+/* Trainer Card Section */
+/* Trainer card wrapper */
+.trainer-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allow elements to wrap on small screens */
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 100%; /* Ensure the card doesn't exceed the screen width */
+  box-sizing: border-box; /* Include padding and border in the width */
+  overflow: hidden; /* Prevent text from spilling out */
 }
 
-/* Trainer Card Section */
-.trainer-info-section {
-    padding: 40px;
-    background-color: rgb(207, 232, 185);
-  }
-  
-  .section-title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 50px;
-    font-weight: bolder;
-  }
-  
-  .tabs {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .tab-btn {
-    padding: 10px 20px;
-    margin: 0 10px;
-    font-size: 1rem;
-    background-color: #e6e7f6;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .tab-btn.active {
-    background-color: #007bff;
-    color: white;
-  }
-  
+/* Trainer details */
+.trainer-details {
+  flex-grow: 1;
+  min-width: 250px;
+  padding: 10px;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  word-wrap: break-word; /* Break long words to prevent overflow */
+}
+
+/* Trainer image */
+.trainer-image {
+  display: flex;
+  flex-direction: column; /* Stack name below the image */
+  align-items: center;
+  text-align: center; /* Center-align the name */
+}
+
+.trainer-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Trainer name */
+.trainer-name {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #e6e7f6;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab-btn.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Content */
+.tab-content {
+  text-align: center; /* Center-align the entire content */
+}
+
+.tab-content p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  margin: 0 auto; /* Ensure the paragraph stays centered */
+  max-width: 90%; /* Limit the width to avoid stretching */
+}
+
+/* Call-to-action buttons */
+.cta-buttons {
+  display: flex;
+  justify-content: center; /* Center the buttons */
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap; /* Allow buttons to stack on smaller screens */
+}
+
+.join-batch-link,
+.chat-btn {
+  flex: 1; /* Make buttons take equal space */
+  text-align: center;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  max-width: 250px; /* Limit the width of the button */
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+.trainer-image {
+  display: flex;
+  flex-direction: column; /* Stack image and name vertically */
+  align-items: center; /* Center align the image and name */
+}
+
+.trainer-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px; /* Add spacing between image and name */
+}
+
+.trainer-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center; /* Center align the name */
+  margin: 0; /* Remove extra margin */
+}
+
+@media (max-width: 768px) {
+  /* Trainer card adjustments */
   .trainer-card {
-    display: flex;
-    justify-content: center;
+    flex-direction: column; /* Stack content on smaller screens */
     align-items: center;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 8px;
   }
-  
-  .trainer-image img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 30px;
-  }
-  
+
   .trainer-details {
-    flex-grow: 1;
+    text-align: center; /* Center-align text */
   }
-  
-  .trainer-name {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .trainer-description {
-    margin: 20px 0;
-    font-size: 1rem;
-    color: #555;
-  }
-  
+
   .tab-content p {
-    font-size: 1.3rem;
-    color: hsl(0, 0%, 4%);
+    font-size: 0.9rem; /* Adjust font size for small screens */
   }
-  
-  .cta-buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .join-batch-link {
-    font-size: 1rem;
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .join-batch-link:hover {
-    text-decoration: underline;
-  }
-  
+
+  .join-batch-link,
   .chat-btn {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    padding: 8px;
+    font-size: 0.9rem;
+    max-width: 100%; /* Make buttons full-width on small screens */
   }
-  
-  .chat-btn:hover {
-    background-color: #0056b3;
-  }
- /* Testimonials Carousel Section */
+}
 /* Testimonials Carousel Section */
 .testimonials-carousel-section {
   padding: 40px 20px;
@@ -572,82 +536,6 @@
   }
 }
 
-.faq-section {
-    padding: 20px;
-    background-color: #f9f9f9;
-  }
-  
-  .faq-section h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .accordion {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .faq-item {
-    border: 1px solid hsl(0, 57%, 64%);
-    margin-bottom: 10px;
-    border-radius: 5px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-  }
-  
-  .faq-question {
-    background-color: #007bff;
-    color: white;
-    padding: 15px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.2rem;
-  }
-  
-  .faq-question:hover {
-    background-color: #0056b3;
-  }
-  
-  .faq-answer {
-    padding: 15px;
-    background-color: hwb(0 91% 5%);
-    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.2rem;
-    color: greenyellow;
-  }
-  
-  .faq-item .faq-answer {
-    display: none; /* Hide answers by default */
-  }
-  
-  .faq-item.active .faq-answer {
-    display: block; /* Show the answer when the item is active */
-  }
-  
-  .faq-question span {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  @media (max-width: 768px) {
-    .faq-section h2 {
-      font-size: 1.5rem;
-    }
-  
-    .faq-question {
-      font-size: 1rem;
-    }
-  
-    .faq-answer {
-      font-size: 0.9rem;
-
-    }
-  }
   /* Contact Us Section */
 .contact-section {
     padding: 2rem;
@@ -721,37 +609,7 @@
     .contact-form .form-group textarea {
       width: 100%;
     }
-    .faq-section {
-      padding: 20px;
-      background: #5e9bd7;
-      border-radius: 5px;
-    }
-    
-    .accordion .faq-item {
-      border-bottom: 1px solid hsl(0, 0%, 9%);
-    }
-    
-    .faq-question {
-      background: none;
-      border: none;
-      text-align: left;
-      font-size: 16px;
-      padding: 10px 0;
-      cursor: pointer;
-      transition: color 0.2s;
-    }
-    
-    .faq-question:hover {
-      color: hsl(211, 20%, 55%);
-    }
-    
-    .faq-answer {
-      padding: 10px 0;
-      color: hsl(0, 58%, 48%);
-      font-size: 14px;
-      line-height: 1.5;
-    }
-    
+
 
   
   /* Responsive adjustments for smaller screens */

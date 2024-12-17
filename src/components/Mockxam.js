@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import "./Mockexam.css";
 import mockphotoImg from "../assets/mockphoto.png";
 import FulllengthmockexamImg from "../assets/Fulllengthmockexam.png";
+import minimockexamImg from "../assets/minimockexam.png";
 import PersonalizedimageImg from "../assets/Personalizedimage.png";
+
 
 const FAQItem = ({ question, answer, isOpen, toggle }) => {
   return (
@@ -54,23 +56,49 @@ const PMPPracticeMockExams = () => {
   return (
     <div>
       {/* Hero Section */}
-      <div className="hero-container">
-        <div className="text-content">
-          <h1>
-            PMP® Practice Mock Exams by <span>Edzest</span>
-          </h1>
-          <p>Get Real Exam-Like Questions and Expert Insights</p>
-          <button className="btn-buy-now">Buy Now</button>
-        </div>
-        <div className="image-content">
-          <img src={mockphotoImg} alt="Mock Exams Illustration" />
-        </div>
-      </div>
-
+            {/* Main Container Section */}
+            <div className="container">
+              {/* Left Section: Text Content */}
+              <div className="left-content">
+                <h1 className="fw-bold text-black">
+                 PMP® Practice<br /> Mock Exams
+                           by<span className="text-purple">Edzest</span>
+                </h1>
+                <p className="text-muted mt-3">
+                 Get Real Exam-Like Questions and Expert Insight
+                </p>
+                <button className="btn btn-primary btn-lg mt-3">  Buy Now</button>
+              </div>
+      
+              {/* Right Section: Image */}
+              <div className="right-content">
+                <img
+                  src={mockphotoImg}
+                  alt="PMP Training"
+                  className="img-fluid rounded shadow-lg"
+                />
+              </div>
+            </div>
       {/* Main Container for Sections */}
       <div className="main-container">
         <h1>What's included:</h1>
         {/* Full-Length Mock Exams Section */}
+        <div className="section">
+          <div className="content">
+            <h2>mini-mock exams</h2>
+            <ul>
+              <li>
+              Shorter, targeted exams to evaluate your understanding of specific topics.
+              </li>
+              <li>
+              Perfect for pinpointing areas that need further revision.
+              </li>
+            </ul>
+          </div>
+          <div className="image">
+            <img src={minimockexamImg} alt="Exam Icon" />
+          </div>
+        </div>
         <div className="section">
           <div className="content">
             <h2>Full-Length Mock Exams</h2>
@@ -82,10 +110,6 @@ const PMPPracticeMockExams = () => {
               <li>
                 Experience the pressure of the actual exam and refine your time
                 management skills.
-              </li>
-              <li>
-                Get a detailed performance analysis with insights on strengths
-                and areas for improvement.
               </li>
             </ul>
           </div>
@@ -122,20 +146,30 @@ const PMPPracticeMockExams = () => {
         <div className="button-container">
           <button className="buy-now">Buy Now</button>
         </div>
-      </div>
-
-      {/* FAQ Section - Separate Container */}
-      <div className="faq-container">
-        <h1>FAQs</h1>
-        {faqData.map((faq, index) => (
-          <FAQItem
-            key={index}
-            question={faq.question}
-            answer={faq.answer}
-            isOpen={openIndex === index}
-            toggle={() => handleToggle(index)}
-          />
-        ))}
+        <section className="contact-section">
+        <h2>Contact Us</h2>
+        <p>Send us a message and we’ll get back to you shortly.</p>
+        <form className="contact-form">
+          {/* Input fields for user details */}
+          <div className="form-group">
+            <input type="text" placeholder="First Name" required />
+            <input type="text" placeholder="Last Name" required />
+          </div>
+          <div className="form-group">
+            <input type="tel" placeholder="Your Phone" required />
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <div className="form-group">
+            <input type="text" placeholder="Subject" required />
+          </div>
+          <div className="form-group">
+            <textarea placeholder="Your Message" required></textarea>
+          </div>
+          {/* Submit button */}
+          <button type="submit">Send</button>
+        </form>
+      </section>
+      
       </div>
     </div>
   );
