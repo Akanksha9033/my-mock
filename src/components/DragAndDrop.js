@@ -68,7 +68,7 @@ const DragDropPage = () => {
   return (
     <div className="p-6">
       <h1 className="text-2xl font-bold mb-4">Drag and Drop Test</h1>
-      <p>Match the following countries with their capitals:</p>
+      <p>You are managing a highly visible project for your organization. The Project sponsor is regularly following up with you on the costs you are sending behind maintaining the quality of your products to be delivered. Keep in mind that there are many small products which are being delivered at different phases of the project. Match each of the following cost-types with their correct scenario/definition</p>
       
       <div className="flex space-x-4 mt-4">
         {/* Draggable Capitals */}
